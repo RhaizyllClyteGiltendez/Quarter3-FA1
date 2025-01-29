@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
+var nickname = "Clyte";
+var Height = 59; 
+var Weight = 45; 
 
-</head>
-<body onload="showAlert()">
-  <script>
-    function showAlert() {
-      var Name = prompt("Enter the name: ");
-      var Height = prompt("Enter the height (inches): ");
-      var Weight = prompt("Enter the weight (kg): ");
+var feet = Math.floor(Height / 12);
+var inch = Height % 12;
+var lbs = (Weight * 2.20462).toFixed(2); 
 
-      alert("Name: " + Name + "\nHeight (inches): " + Height + "\nWeight (kg): " + Weight);
-    }
-  </script>
+alert("Name: " + nickname + "\nHeight: " + feet + "'" + inch + "\"" + "\nWeight: " + lbs + " lbs");
